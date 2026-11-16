@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>간단 요리 | 자취 구조대</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/jquery-1.12.3.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="top">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="자취 구조대" />
+      </a>
+
+      <nav aria-label="메인 메뉴">
+        <a class="on" href="recipe.html">간단 요리</a>
+        <a href="items.html">필수 생활용품</a>
+        <a href="chores.html">청소·집안일</a>
+        <a href="budget.html">생활비·절약</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="sub-top">
+        <h2>간단 요리</h2>
+        <p>자취생을 위한 쉬운 요리 영상이에요. 카테고리별로 골라 보세요.</p>
+      </section>
+      <div class="sub-con">
+        <section id="onepan" class="sec">
+          <h2>한 팬 요리</h2>
+          <p class="lead">프라이팬 하나로 끝나는 요리예요.</p>
+          <ul class="cards">
+            <!-- ★ 영상 넣는 방법: 유튜브 영상 > 공유 > 퍼가기에서 iframe 코드를 복사해
+     아래 <div class="video"> 안의 "영상 준비 중" 글자 대신 붙여 넣으세요.
+     제목·조리시간·난이도도 영상에 맞게 고치세요. -->
+            <li>
+              <div class="video">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/14cysiLJkfg?si=-i4rDSFA-ZumssWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <h3>계란 베이컨 볶음밥</h3>
+              <p class="meta">조리시간 10분 | 난이도 쉬움</p>
+            </li>
+            <li>
+              <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/_-BuLToPd2M?si=mV4v07CqK-NVmSAN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+              <h3>8가지 파스타</h3>
+              <p class="meta">조리시간 20분 | 난이도 보통</p>
+            </li>
+            <li>
+              <div class="video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/8GfdWzf8K9E?si=9gheHUWNOYWouzXi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <h3>간장 닭구이</h3>
+              <p class="meta">조리시간 25분 | 난이도 보통</p>
+            </li>
+            <li>
+              <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/K7SFMHAzTPE?si=TIGLLjPsHaSOORp2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <h3>김치 두부 조림</h3>
+              <p class="meta">조리시간 15분 | 난이도 쉬움</p>
+            </li>
+          </ul>
+        </section>
+        <section id="micro" class="sec">
+          <h2>전자레인지 요리</h2>
+          <p class="lead">불 없이 전자레인지만으로 만드는 요리예요.</p>
+          <ul class="cards">
+            <li>
+              <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rAmvchODeTM?si=W8SLUzlHuM3-ndXF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <h3>계란찜</h3>
+              <p class="meta">조리시간 5분 | 난이도 쉬움</p>
+            </li>
+            <li>
+              <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GlTHVdIyvvI?si=BWYBNNFg_pvAgo_-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <h3>스팸마요 덮밥</h3>
+              <p class="meta">조리시간 5분 | 난이도 쉬움</p>
+            </li>
+            <li>
+              <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/81rXskHpj2w?si=In9OmEFFOA8WUn-j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <h3>감자조림</h3>
+              <p class="meta">조리시간 10분 | 난이도 보통</p>
+            </li>
+            <li>
+              <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AjMZQcFaRMI?si=_N1Nzemc6dEGg9-P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <h3>계란말이</h3>
+              <p class="meta">조리시간 3분 | 난이도 쉬움</p>
+            </li>
+          </ul>
+        </section>
+        <section id="side" class="sec">
+          <h2>밑반찬</h2>
+          <p class="lead">한 번 만들어 두고 며칠 먹을 수 있는 반찬이에요.</p>
+          <ul class="cards">
+            <li>
+              <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Fz-_K02G1_U?si=oCrSjswSLZVTSoF_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <h3>반숙 계란장</h3>
+              <p class="meta">조리시간 30분 | 난이도 보통</p>
+            </li>
+            <li>
+              <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6N33BEJRNMU?si=1THbayDlONc7CIWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <h3>멸치볶음</h3>
+              <p class="meta">조리시간 10분 | 난이도 쉬움</p>
+            </li>
+            <li>
+              <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/q57kIT3WGWo?si=qwjThGqyscgbtqn3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <h3>콩나물무침</h3>
+              <p class="meta">조리시간 10분 | 난이도 쉬움</p>
+            </li>
+            <li>
+              <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZZ55HYMEwxo?si=DpLBo_vuhRSopEo5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <h3>어묵볶음</h3>
+              <p class="meta">조리시간 15분 | 난이도 쉬움</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <a class="logo" href="index.html">자취 구조대</a>
+      <a href="index.html">사이트 소개</a>
+      <a href="#">이용약관</a>
+      <a href="#">개인정보 처리방침</a>
+      <a href="#">문의하기</a>
+      <a href="index.html">사이트맵</a>
+    </footer>
+  </body>
+</html>

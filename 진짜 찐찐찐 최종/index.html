@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>메인 | 자취 구조대</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/jquery-1.12.3.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="top">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="자취 구조대" />
+      </a>
+
+      <nav aria-label="메인 메뉴">
+        <a href="recipe.html">간단 요리</a>
+        <a href="items.html">필수 생활용품</a>
+        <a href="chores.html">청소·집안일</a>
+        <a href="budget.html">생활비·절약</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 1. 메인 문구: 3초마다 옆으로 넘어가요 (js/script.js) -->
+      <section class="hero">
+        <ul class="hero-slides">
+          <li>
+            <h1>
+              자취 첫걸음,
+              <br />
+              처음 혼자 사는 당신을 응원합니다!
+            </h1>
+            <p>요리, 살림, 생활비까지 한곳에서 확인하세요.</p>
+            <a class="btn" href="items.html">준비물부터 점검하기</a>
+          </li>
+          <li>
+            <h1>
+              오늘 뭐 먹지?
+              <br />
+              설거지 적은 요리부터 시작해요
+            </h1>
+            <p>한 팬, 전자레인지, 밑반찬 영상을 모았어요.</p>
+            <a class="btn" href="recipe.html">요리 영상 보러 가기</a>
+          </li>
+          <li>
+            <h1>
+              이번 달 월급,
+              <br />
+              어디에 얼마나 쓸까요?
+            </h1>
+            <p>월 생활비를 넣으면 항목별 예산이 계산돼요.</p>
+            <a class="btn" href="budget.html">생활비 나눠 보기</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 2. 새소식·배너·바로가기 (3칸) -->
+      <section class="wrap three">
+        <!-- 2-1. 새소식·인기 꿀팁 -->
+        <div>
+          <h2>새소식·인기 꿀팁</h2>
+          <div class="board">
+            <a href="recipe.html">
+              <small>간단 요리</small>
+              <b>계란찜, 전자레인지로 5분 완성</b>
+            </a>
+            <a href="items.html">
+              <small>필수 생활용품</small>
+              <b>처음엔 최소한으로 시작하세요</b>
+            </a>
+            <a href="chores.html">
+              <small>청소·집안일</small>
+              <b>세제는 절대 섞어 쓰지 마세요</b>
+            </a>
+            <a href="budget.html">
+              <small>생활비·절약</small>
+              <b>월급날 먼저 저축하세요</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2-2. 배너 -->
+        <aside class="banner">
+          <h2>배너</h2>
+          <p>
+            이달의 절약 챌린지
+            <br />
+            참여하고 절약 꿀팁 받기
+          </p>
+          <a class="btn" href="budget.html">챌린지 보기</a>
+        </aside>
+
+        <!-- 2-3. 바로가기 -->
+        <div>
+          <h2>바로가기</h2>
+          <div class="quick">
+            <a href="recipe.html">
+              ▶
+              <span>요리 영상 보기</span>
+            </a>
+            <a href="items.html">
+              ☑
+              <span>용품 체크</span>
+            </a>
+            <a href="budget.html">
+              ₩
+              <span>생활비 분배 팁</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="logo" href="index.html">자취 구조대</a>
+      <a href="index.html">사이트 소개</a>
+      <a href="#">이용약관</a>
+      <a href="#">개인정보 처리방침</a>
+      <a href="#">문의하기</a>
+      <a href="index.html">사이트맵</a>
+    </footer>
+  </body>
+</html>

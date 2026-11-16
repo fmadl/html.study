@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>생활비·절약 | 자취 구조대</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/jquery-1.12.3.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="top">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="자취 구조대" />
+      </a>
+
+      <nav aria-label="메인 메뉴">
+        <a href="recipe.html">간단 요리</a>
+        <a href="items.html">필수 생활용품</a>
+        <a href="chores.html">청소·집안일</a>
+        <a class="on" href="budget.html">생활비·절약</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="sub-top">
+        <h2>생활비·절약</h2>
+        <p>월 생활비를 항목별로 어떻게 나누면 좋을지 알려 드려요.</p>
+      </section>
+      <div class="sub-con">
+        <section id="split" class="sec">
+          <h2>생활비 분배 꿀팁</h2>
+          <p class="lead">월 생활비를 입력하면 항목별 예산이 자동으로 계산돼요.</p>
+          <div class="calc">
+            <label for="income">월 생활비(원)</label>
+            <input id="income" type="number" min="0" step="10000" placeholder="예: 1000000" />
+            <button type="button" id="reset" class="btn-s">초기화</button>
+          </div>
+          <table class="table" id="budget-table">
+            <thead>
+              <tr>
+                <th scope="col">항목</th>
+                <th scope="col">권장 비율</th>
+                <th scope="col">내 예산</th>
+                <th scope="col">설명</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">월세·관리비</th>
+                <td class="ratio" data-r="30">30%</td>
+                <td class="amount">-</td>
+                <td>월세와 관리비는 소득의 30%를 넘지 않게 정하는 것이 좋아요.</td>
+              </tr>
+              <tr>
+                <th scope="row">식비</th>
+                <td class="ratio" data-r="25">25%</td>
+                <td class="amount">-</td>
+                <td>장보기와 배달의 균형이 식비를 좌우해요.</td>
+              </tr>
+              <tr>
+                <th scope="row">교통·통신</th>
+                <td class="ratio" data-r="10">10%</td>
+                <td class="amount">-</td>
+                <td>고정으로 나가는 비용이라 한 번 줄이면 계속 아껴요.</td>
+              </tr>
+              <tr>
+                <th scope="row">생활용품</th>
+                <td class="ratio" data-r="5">5%</td>
+                <td class="amount">-</td>
+                <td>처음 몇 달은 더 쓰고 이후에는 줄어드는 항목이에요.</td>
+              </tr>
+              <tr>
+                <th scope="row">여가</th>
+                <td class="ratio" data-r="10">10%</td>
+                <td class="amount">-</td>
+                <td>즐거움도 예산에 포함해야 오래 지켜요.</td>
+              </tr>
+              <tr>
+                <th scope="row">저축</th>
+                <td class="ratio" data-r="20">20%</td>
+                <td class="amount">-</td>
+                <td>월급날 먼저 저축하고 남은 돈으로 생활해요.</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="row">합계</th>
+                <td id="sumRatio">100%</td>
+                <td id="sumAmount">-</td>
+                <td>항목별 예산의 합이에요.</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+        <section id="tips" class="sec">
+          <h2>항목별 절약 팁</h2>
+          <p class="lead">항목을 눌러 팁을 확인하세요.</p>
+          <button type="button" id="toggleTips" class="btn-s">모두 펼치기</button>
+          <div class="tips">
+            <details class="tip">
+              <summary>월세·관리비 절약 팁</summary>
+              <ul>
+                <li>이사 전 관리비 항목을 꼭 확인하세요.</li>
+                <li>전기·가스 요금은 사용량을 기록해 두세요.</li>
+              </ul>
+            </details>
+            <details class="tip">
+              <summary>식비 절약 팁</summary>
+              <ul>
+                <li>일주일치 장보기 목록을 먼저 만드세요.</li>
+                <li>배달은 주 1~2회로 정해 두세요.</li>
+              </ul>
+            </details>
+            <details class="tip">
+              <summary>교통·통신 절약 팁</summary>
+              <ul>
+                <li>교통 정기권이나 환급 제도를 확인하세요.</li>
+                <li>알뜰 요금제로 통신비를 점검하세요.</li>
+              </ul>
+            </details>
+            <details class="tip">
+              <summary>생활용품 절약 팁</summary>
+              <ul>
+                <li>필요한 물건만 목록으로 만든 뒤 구매하세요.</li>
+                <li>중고 거래와 대용량 묶음을 활용하세요.</li>
+              </ul>
+            </details>
+            <details class="tip">
+              <summary>여가 절약 팁</summary>
+              <ul>
+                <li>한 달 여가비를 미리 정해 두세요.</li>
+                <li>무료 문화 행사도 찾아보세요.</li>
+              </ul>
+            </details>
+            <details class="tip">
+              <summary>저축 절약 팁</summary>
+              <ul>
+                <li>자동이체를 월급날 다음 날로 설정하세요.</li>
+                <li>비상금 통장을 따로 만들어 두세요.</li>
+              </ul>
+            </details>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <a class="logo" href="index.html">자취 구조대</a>
+      <a href="index.html">사이트 소개</a>
+      <a href="#">이용약관</a>
+      <a href="#">개인정보 처리방침</a>
+      <a href="#">문의하기</a>
+      <a href="index.html">사이트맵</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>필수 생활용품 | 자취 구조대</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/jquery-1.12.3.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="top">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="자취 구조대" />
+      </a>
+
+      <nav aria-label="메인 메뉴">
+        <a href="recipe.html">간단 요리</a>
+        <a class="on" href="items.html">필수 생활용품</a>
+        <a href="chores.html">청소·집안일</a>
+        <a href="budget.html">생활비·절약</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="sub-top">
+        <h2>필수 생활용품 체크리스트</h2>
+        <p>공간별로 정리했어요. 필수 표시가 있는 물건부터 준비하세요.</p>
+      </section>
+      <div class="sub-con">
+        <p class="hint">
+          <em class="badge">필수</em>
+          표시는 없으면 생활이 어려운 물건이에요. 체크한 내용은 자동으로 저장돼요.
+        </p>
+        <section id="kitchen" class="sec">
+          <h2>주방</h2>
+          <ul class="checks">
+            <li class="must">
+              <label>
+                <input type="checkbox" data-key="냄비" />
+                <b>
+                  냄비
+                  <em class="badge">필수</em>
+                </b>
+                <span>라면·국을 겸하는 18~20cm 크기</span>
+              </label>
+            </li>
+            <li class="must">
+              <label>
+                <input type="checkbox" data-key="프라이팬" />
+                <b>
+                  프라이팬
+                  <em class="badge">필수</em>
+                </b>
+                <span>코팅 팬 하나면 대부분 해결</span>
+              </label>
+            </li>
+            <li class="must">
+              <label>
+                <input type="checkbox" data-key="칼·도마" />
+                <b>
+                  칼·도마
+                  <em class="badge">필수</em>
+                </b>
+                <span>칼은 중간 크기 하나</span>
+              </label>
+            </li>
+            <li class="must">
+              <label>
+                <input type="checkbox" data-key="수저·젓가락" />
+                <b>
+                  수저·젓가락
+                  <em class="badge">필수</em>
+                </b>
+                <span>2인분 정도 넉넉히</span>
+              </label>
+            </li>
+            <li class="must">
+              <label>
+                <input type="checkbox" data-key="그릇·컵" />
+                <b>
+                  그릇·컵
+                  <em class="badge">필수</em>
+                </b>
+                <span>밥그릇, 국그릇, 접시, 컵</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" data-key="밥솥" />
+                <b>밥솥</b>
+                <span>1~2인용이면 충분</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" data-key="전기포트" />
+                <b>전기포트</b>
+                <span>라면, 차, 간단한 요리에 활용</span>
+              </label>
+            </li>
+            <li class="must">
+              <label>
+                <input type="checkbox" data-key="주방 세제·수세미" />
+                <b>
+                  주방 세제·수세미
+                  <em class="badge">필수</em>
+                </b>
+                <span>세제와 수세미는 세트로</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" data-key="고무장갑" />
+                <b>고무장갑</b>
+                <span>설거지와 청소에 모두 사용</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" data-key="행주·키친타월" />
+                <b>행주·키친타월</b>
+                <span>행주는 자주 삶거나 교체</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" data-key="밀폐용기" />
+                <b>밀폐용기</b>
+                <span>남은 반찬과 밥 보관</span>
+              </label>
+            </li>
+            <li class="must">
+              <label>
+                <input type="checkbox" data-key="조리 도구" />
+                <b>
+                  조리 도구
+                  <em class="badge">필수</em>
+                </b>
+                <span>뒤집개, 국자, 집게</span>
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section id="bath" class="sec">
+          <h2>욕실</h2>
+          <ul class="checks">
+            <li class="must">
+              <label>
+                <input type="checkbox" data-key="수건" />
+                <b>
+                  수건
+                  <em class="badge">필수</em>
+                </b>
+                <span>최소 3~4장</span>
+              </label>
+            </li>
+            <li class="must">
+              <label>
+                <input type="checkbox" data-key="칫솔·치약" />
+                <b>
+                  칫솔·치약
+                  <em class="badge">필수</em>
+                </b>
+                <span>여유분도 함께</span>
+              </label>
+            </li>
+            <li class="must">
+              <label>
+                <input type="checkbox" data-key="샴푸·바디워시" />
+                <b>
+                  샴푸·바디워시
+                  <em class="badge">필수</em>
+                </b>
+                <span>처음엔 소용량으로</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" data-key="욕실 슬리퍼" />
+                <b>욕실 슬리퍼</b>
+                <span>미끄럼 방지 제품</span>
+              </label>
+            </li>
+            <li class="must">
+              <label>
+                <input type="checkbox" data-key="화장지" />
+                <b>
+                  화장지
+                  <em class="badge">필수</em>
+                </b>
+                <span>여러 롤 묶음이 저렴</span>
+              </label>
+            </li>
+            <li class="must">
+              <label>
+                <input type="checkbox" data-key="변기솔" />
+                <b>
+                  변기솔
+                  <em class="badge">필수</em>
+                </b>
+                <span>청결을 위해 꼭 필요</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" data-key="욕실 매트" />
+                <b>욕실 매트</b>
+                <span>물기를 흡수하는 것</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" data-key="배수구 망" />
+                <b>배수구 망</b>
+                <span>머리카락 막힘 방지</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" data-key="샤워 타월" />
+                <b>샤워 타월</b>
+                <span>닦는 용도로 하나</span>
+              </label>
+            </li>
+            <li class="must">
+              <label>
+                <input type="checkbox" data-key="핸드워시" />
+                <b>
+                  핸드워시
+                  <em class="badge">필수</em>
+                </b>
+                <span>세면대 옆에 비치</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" data-key="욕실 청소솔" />
+                <b>욕실 청소솔</b>
+                <span>타일과 틈새용</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" data-key="빨래망" />
+                <b>빨래망</b>
+                <span>속옷, 양말 세탁용</span>
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section id="bed" class="sec">
+          <h2>침실</h2>
+          <ul class="checks">
+            <li class="must">
+              <label>
+                <input type="checkbox" data-key="이불·베개" />
+                <b>
+                  이불·베개
+                  <em class="badge">필수</em>
+                </b>
+                <span>계절에 맞는 두께로</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" data-key="침대 시트" />
+                <b>침대 시트</b>
+                <span>여벌 한 장 더 준비</span>
+              </label>
+            </li>
+            <li class="must">
+              <label>
+                <input type="checkbox" data-key="멀티탭" />
+                <b>
+                  멀티탭
+                  <em class="badge">필수</em>
+                </b>
+                <span>개별 스위치가 있는 것</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" data-key="스탠드 조명" />
+                <b>스탠드 조명</b>
+                <span>은은한 조명</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" data-key="옷걸이" />
+                <b>옷걸이</b>
+                <span>옷 개수보다 조금 넉넉히</span>
+              </label>
+            </li>
+            <li class="must">
+              <label>
+                <input type="checkbox" data-key="빨래건조대" />
+                <b>
+                  빨래건조대
+                  <em class="badge">필수</em>
+                </b>
+                <span>접이식이 공간 절약</span>
+              </label>
+            </li>
+            <li class="must">
+              <label>
+                <input type="checkbox" data-key="쓰레기통" />
+                <b>
+                  쓰레기통
+                  <em class="badge">필수</em>
+                </b>
+                <span>뚜껑 있는 것이 냄새 차단</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" data-key="암막 커튼" />
+                <b>암막 커튼</b>
+                <span>수면과 사생활 보호</span>
+              </label>
+            </li>
+            <li class="must">
+              <label>
+                <input type="checkbox" data-key="청소 도구" />
+                <b>
+                  청소 도구
+                  <em class="badge">필수</em>
+                </b>
+                <span>청소기 또는 밀대</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" data-key="제습제" />
+                <b>제습제</b>
+                <span>옷장과 신발장용</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" data-key="소화기" />
+                <b>소화기</b>
+                <span>위치를 꼭 기억해 두기</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" data-key="구급상자" />
+                <b>구급상자</b>
+                <span>밴드, 소독약, 체온계</span>
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section id="notes" class="sec">
+          <h2>구매 전 알아두기</h2>
+          <p class="lead">물건을 사기 전에 이 세 가지만 기억하세요.</p>
+          <ul class="notes">
+            <li>
+              <h3>처음엔 최소한으로</h3>
+              <p>살다 보면 꼭 필요한 물건이 보여요. 나머지는 천천히 채워도 늦지 않아요.</p>
+            </li>
+            <li>
+              <h3>가격 비교와 중고 활용</h3>
+              <p>생활용품점과 중고 거래를 이용하면 초기 비용을 크게 줄일 수 있어요.</p>
+            </li>
+            <li>
+              <h3>입주 전에 확인</h3>
+              <p>집에 이미 있는 가구와 가전, 수납공간을 확인한 뒤 구매하면 중복을 막아요.</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="자취 구조대" />
+      </a>
+      <a href="index.html">사이트 소개</a>
+      <a href="#">이용약관</a>
+      <a href="#">개인정보 처리방침</a>
+      <a href="#">문의하기</a>
+      <a href="index.html">사이트맵</a>
+    </footer>
+  </body>
+</html>
